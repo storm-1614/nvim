@@ -7,6 +7,7 @@ require "config.fzf"
 require "config.treesitter"
 require "config.lualine"
 require "user.keymaps"
+require "config.md-img-paste"
 vim.cmd[[colorscheme nord]]
 --require('lsp/setup')
 

@@ -10,6 +10,8 @@ return require('packer').startup(function()
 		use 'vimcn/vimcdoc'
 		--翻译
 		use 'voldikss/vim-translator'
+		--将剪切板中的图片插入为Markdown 代码
+		use 'ferrine/md-img-paste.vim'
 		--tree
     	use {
         'kyazdani42/nvim-tree.lua',
