@@ -12,6 +12,8 @@ return require('packer').startup(function()
 		use 'voldikss/vim-translator'
 		--将剪切板中的图片插入为Markdown 代码
 		use 'ferrine/md-img-paste.vim'
+		--markdown目录
+		use 'mzlogin/vim-markdown-toc'
 		--tree
     	use {
         'kyazdani42/nvim-tree.lua',
