@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  ["md-img-paste.vim"] = {
+    loaded = true,
+    path = "/home/storm/.local/share/nvim/site/pack/packer/start/md-img-paste.vim",
+    url = "https://github.com/ferrine/md-img-paste.vim"
+  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/nord.nvim",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["vim-markdown-toc"] = {
+    loaded = true,
+    path = "/home/storm/.local/share/nvim/site/pack/packer/start/vim-markdown-toc",
+    url = "https://github.com/mzlogin/vim-markdown-toc"
   },
   ["vim-translator"] = {
     loaded = true,
