@@ -45,6 +45,7 @@ markdown阅读：markdown-preview.nvim
 中文帮助：vimcdoc  
 markdown插入剪贴板图片:md-img-paste  
 markdwon建立目录:vim-markdown-toc  
+一键运行程序:coderunner.nvim  
 
 ### TODO
  - [ ] ……

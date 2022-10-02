@@ -1,6 +1,7 @@
 
 require "user.options"
 require "user.plugins"
+require "user.keymaps"
 require "config.nvim-tree"
 require "config.coc"
 require "config.fzf"
