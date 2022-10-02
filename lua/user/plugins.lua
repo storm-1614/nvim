@@ -14,6 +14,8 @@ return require('packer').startup(function()
 		use 'ferrine/md-img-paste.vim'
 		--markdown目录
 		use 'mzlogin/vim-markdown-toc'
+		--code_runner
+		use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
 		--tree
     	use {
         'kyazdani42/nvim-tree.lua',
