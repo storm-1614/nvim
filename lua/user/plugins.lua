@@ -1,7 +1,7 @@
 return require('packer').startup(function()
     	use 'wbthomason/packer.nvim'
 		--theme
-		use 'shaunsingh/nord.nvim'
+		use 'rmehri01/onenord.nvim'
 		--coc
 		use 'neoclide/coc.nvim'
 		--fzf
@@ -43,4 +43,5 @@ return require('packer').startup(function()
 	
 		-- lspconfig
 		--  use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
+		use "tiagovla/scope.nvim"  
 end)

@@ -18,7 +18,7 @@ bufferline.setup {
     -- NOTE: this plugin is designed with this icon in mind,
     -- and so changing this is NOT recommended, this is intended
     -- as an escape hatch for people who cannot bear it for whatever reason
-    indicator_icon = "",
+ --   indicator_icon = "",
     buffer_close_icon = "",
     modified_icon = "●",
     close_icon = "",
@@ -80,12 +80,20 @@ bufferline.setup {
     --enforce_regular_tabs = false | true,
     enforce_regular_tabs = false,
     --always_show_bufferline = true | false,
-    always_show_bufferline = true
+    always_show_bufferline = true,
     --[[sort_by = "id" | "extension" | "relative_directory" | "directory" | "tabs" | function(buffer_a, buffer_b)
         -- add custom logic
-        return buffer_a.modified > buffer_b.modified
-      end]]
-  }
+    --    return buffer_a.modified > buffer_b.modified
+    --  end]]
+	
+	offsets = {{
+	    filetype = "NvimTree",
+    	text = "File Explorer",
+	    highlight = "Directory",
+	    text_align = "left"
+	}}
+
+	}
 }
 
 --按键映射
@@ -101,5 +109,5 @@ vim.api.nvim_set_keymap("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", {no
 vim.api.nvim_set_keymap("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
-
+ 
 

@@ -9,6 +9,6 @@ require "config.treesitter"
 require "config.lualine"
 require "config.md-img-paste"
 require "config.coderunner"
-vim.cmd[[colorscheme nord]]
---require('lsp/setup')
-
+require "config.bufferline"
+--vim.cmd[[colorscheme nordic]]
+require('onenord').setup()
