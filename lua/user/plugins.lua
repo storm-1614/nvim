@@ -43,5 +43,4 @@ return require('packer').startup(function()
 	
 		-- lspconfig
 		--  use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
-		use "tiagovla/scope.nvim"  
 end)
