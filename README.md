@@ -33,7 +33,7 @@ TSInstall bash c cpp css html lua python yaml
 ### 插件列表
 
 插件管理器：packer.nvim  
-主题：nord.nvim  
+主题：onenord.nvim  
 lsp：coc.nvim  
 文件查找：nvim-fzf  
 文件树：nvim-tree.lua  
@@ -46,6 +46,10 @@ markdown阅读：markdown-preview.nvim
 markdown插入剪贴板图片:md-img-paste  
 markdwon建立目录:vim-markdown-toc  
 一键运行程序:coderunner.nvim  
+自动保存:auto-save.nvim  
 
+### 快捷键
+待定编写
 ### TODO
+ - [ ] 写快捷键  
  - [ ] ……

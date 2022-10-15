@@ -20,8 +20,6 @@ local options = {
     cursorcolumn = false, --不高亮当前列
     showcmd = true, --右下角显示命令
 }
---这里只列举基础的配置，更多选项可以在Vim中:set all查询
-
 --应用上面配置
 vim.opt.shortmess:append 'c'
 for k, v in pairs(options) do
@@ -29,4 +27,6 @@ for k, v in pairs(options) do
 end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
+--使用系统剪贴板
+vim.cmd "set clipboard+=unnamedplus"
 
