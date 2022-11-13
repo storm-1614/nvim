@@ -15,7 +15,7 @@ return require('packer').startup(function()
 		--markdown目录
 		use 'mzlogin/vim-markdown-toc'
 		--自动保存
-		use 'Pocco81/auto-save.nvim'
+		--use 'Pocco81/auto-save.nvim'
 		--code_runner
 		use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
 		--tree
