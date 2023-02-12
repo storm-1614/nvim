@@ -1,6 +1,7 @@
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
+--alt
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 map('n', '<A-t>', ':tabedit<CR>', opt)
 map('n', '<A-d>', ':BufferLinePickClose<CR>', opt)
@@ -18,7 +19,5 @@ map('n', '<A-down>', '<C-w><down>', opt)
 
 -- Ctrl
 map('n', '<C-q>', ':q<CR>', opt)
-
-
 
 return pluginKeys

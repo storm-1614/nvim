@@ -28,10 +28,10 @@ return require('packer').startup(function()
 		use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
 		-- install without yarn or npm
-		use({
-    		"iamcco/markdown-preview.nvim",
-    		run = function() vim.fn["mkdp#util#install"]() end,	
-		})
+		--use({
+    	--	"iamcco/markdown-preview.nvim",
+    	--	run = function() vim.fn["mkdp#util#install"]() end,	
+		--})
 		use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 		-- treesitter
@@ -41,6 +41,7 @@ return require('packer').startup(function()
   			'nvim-lualine/lualine.nvim',
   		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 			}
+		use 'makerj/vim-pdf'
 		--use {'glepnir/dashboard-nvim'}
 	
 		-- lspconfig
