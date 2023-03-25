@@ -1,3 +1,4 @@
+
 require "user.options"
 require "user.plugins"
 require "user.keymaps"
@@ -10,9 +11,9 @@ require "config.lualine"
 require "config.md-img-paste"
 require "config.coderunner"
 require "config.bufferline"
+require "config.dashboard"
 
-require "onenord.init"
+--require "onenord.init"
 
 require('onenord').setup()
-vim.cmd([[autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE]])
 

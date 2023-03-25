@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/code_runner.nvim",
     url = "https://github.com/CRAG666/code_runner.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/storm/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
