@@ -18,6 +18,8 @@ return require('packer').startup(function()
 		--use 'Pocco81/auto-save.nvim'
 		--code_runner
 		use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
+		--输入法
+		use '520Matches/fcitx5.vim'
 		--tree
     	use {
         'kyazdani42/nvim-tree.lua',
@@ -48,5 +50,4 @@ return require('packer').startup(function()
 		use {
 		  'glepnir/dashboard-nvim',
     }
-
 end)
