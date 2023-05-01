@@ -27,7 +27,7 @@ return require('packer').startup(function()
     		}
 
 		-- bufferline
-		use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+		--use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
 		-- install without yarn or npm
 		--use({

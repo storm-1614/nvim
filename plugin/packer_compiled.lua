@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/storm/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -93,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/storm/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  ["fcitx5.vim"] = {
+    loaded = true,
+    path = "/home/storm/.local/share/nvim/site/pack/packer/start/fcitx5.vim",
+    url = "https://github.com/520Matches/fcitx5.vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
