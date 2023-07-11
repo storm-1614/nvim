@@ -1,9 +1,10 @@
 return require('packer').startup(function()
     	use 'wbthomason/packer.nvim'
 		--theme
-		use 'rmehri01/onenord.nvim'
+		use 'shaunsingh/nord.nvim'
 		--coc
 		use 'neoclide/coc.nvim'
+		use 'tweekmonster/startuptime.vim'
 		--fzf
 		use 'vijaymarupudi/nvim-fzf'
 		--vim_doc
