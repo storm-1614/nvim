@@ -42,4 +42,7 @@ require("lazy").setup({
   'nvim-lua/plenary.nvim',
   --'glepnir/dashboard-nvim',
   'nvim-lualine/lualine.nvim',
+ 	--标题高亮 
+  'lukas-reineke/headlines.nvim',
+  "nvim-treesitter/nvim-treesitter",
   })

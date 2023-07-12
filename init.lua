@@ -7,6 +7,7 @@ require "configs.nord"
 require "configs.tree"
 require "configs/coderunner"
 require "configs/lualine"
+require "configs/headlines"
 --require("configs/dashboard")
 
 --lsp
