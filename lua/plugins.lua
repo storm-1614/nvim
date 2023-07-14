@@ -18,13 +18,14 @@ require("lazy").setup({
   "folke/which-key.nvim",
   { "folke/neoconf.nvim", cmd = "Neoconf" },
   "folke/neodev.nvim",
-  "nvim-tree/nvim-tree.lua",
-  "shaunsingh/nord.nvim",
-  "tweekmonster/startuptime.vim",
-  "520Matches/fcitx5.vim",
-  "iamcco/markdown-preview.nvim",
+  "nvim-tree/nvim-tree.lua",  --文件树
+  "shaunsingh/nord.nvim",  --主题
+  "tweekmonster/startuptime.vim",  --打开时间
+  "520Matches/fcitx5.vim",  --中文输入法
+  "iamcco/markdown-preview.nvim",  --md预览
+  --lsp配置
   "neovim/nvim-lspconfig", 
-  "williamboman/nvim-lsp-installer",
+  "williamboman/nvim-lsp-installer",  
     -- nvim-cmp
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-buffer',
@@ -38,11 +39,14 @@ require("lazy").setup({
   -- lspkind
   'onsails/lspkind-nvim',
 
-  'CRAG666/code_runner.nvim',
   'nvim-lua/plenary.nvim',
-  --'glepnir/dashboard-nvim',
-  'nvim-lualine/lualine.nvim',
- 	--标题高亮 
-  'lukas-reineke/headlines.nvim',
-  "nvim-treesitter/nvim-treesitter",
+
+  'glepnir/dashboard-nvim', --启动页
+  'nvim-tree/nvim-web-devicons', --提供一些图标？
+  'CRAG666/code_runner.nvim',  --代码运行
+  'nvim-lualine/lualine.nvim',  --状态栏
+  'lukas-reineke/headlines.nvim',	--标题高亮
+  "nvim-treesitter/nvim-treesitter",  --语法高亮
+  'norcalli/nvim-colorizer.lua',  --颜色高亮
+  'ibhagwan/fzf-lua', --fzf
   })
