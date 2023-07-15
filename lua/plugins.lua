@@ -49,4 +49,5 @@ require("lazy").setup({
   "nvim-treesitter/nvim-treesitter",  --语法高亮
   'norcalli/nvim-colorizer.lua',  --颜色高亮
   'ibhagwan/fzf-lua', --fzf
+  'jiangmiao/auto-pairs',--符号补全
   })
