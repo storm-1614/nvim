@@ -50,4 +50,5 @@ require("lazy").setup({
   'norcalli/nvim-colorizer.lua',  --颜色高亮
   'ibhagwan/fzf-lua', --fzf
   'jiangmiao/auto-pairs',--符号补全
+  'p00f/clangd_extensions.nvim',--clang支持
   })
