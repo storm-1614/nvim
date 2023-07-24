@@ -23,3 +23,5 @@ require'lspconfig'.rust_analyzer.setup{}
 
 requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 
+vim.o.guifont = "Hack Nerd Font:h10" 
+vim.g.neovide_transparency = 0.8
