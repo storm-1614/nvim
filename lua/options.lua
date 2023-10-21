@@ -28,7 +28,7 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 --使用系统剪贴板
-vim.cmd "set clipboard+=unnamedplus"
+--vim.cmd "set clipboard+=unnamedplus"
 
 vim.g['mkdp_theme'] = 'light'
 

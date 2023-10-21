@@ -51,4 +51,13 @@ require("lazy").setup({
   'ibhagwan/fzf-lua', --fzf
   'jiangmiao/auto-pairs',--符号补全
   'p00f/clangd_extensions.nvim',--clang支持
+  'mzlogin/vim-markdown-toc', --markdown 目录
+  {
+    "nvim-neorg/neorg",
+    build = ":Neorg sync-parsers",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
   })
+
+

@@ -22,9 +22,9 @@
 --      ['<C-e>'] = cmp.mapping.abort(),
 --      ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 		    -- 上一个
-    ['<C-k>'] = cmp.mapping.select_prev_item(),
+    ['<A-k>'] = cmp.mapping.select_prev_item(),
     -- 下一个
-    ['<C-j>'] = cmp.mapping.select_next_item(),
+    ['<A-j>'] = cmp.mapping.select_next_item(),
     -- 出现补全
     ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     -- 取消
