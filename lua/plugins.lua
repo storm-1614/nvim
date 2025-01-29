@@ -22,7 +22,13 @@ require("lazy").setup({
   "shaunsingh/nord.nvim",  --主题
   "tweekmonster/startuptime.vim",  --打开时间
   "520Matches/fcitx5.vim",  --中文输入法
-  "iamcco/markdown-preview.nvim",  --md预览
+
+  --md预览
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+
   --lsp配置
   "neovim/nvim-lspconfig", 
   "williamboman/nvim-lsp-installer",  
@@ -59,5 +65,6 @@ require("lazy").setup({
   },
 
   })
+
 
 
