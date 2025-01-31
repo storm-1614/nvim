@@ -31,7 +31,9 @@ require("lazy").setup({
 
   --lsp配置
   "neovim/nvim-lspconfig", 
-  "williamboman/nvim-lsp-installer",  
+--  "williamboman/nvim-lsp-installer",  
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim" ,
     -- nvim-cmp
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-buffer',

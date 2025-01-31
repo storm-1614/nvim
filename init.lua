@@ -9,11 +9,12 @@ require "configs.tree"
 require "configs.coderunner"
 require "configs.lualine"
 require "configs.headlines"
+require("configs.mason")
 --require "configs.cmake"
 require("configs.dashboard")
 
 --lsp
-require "lsp/init"
+require "lsp.init"
 
 
 
