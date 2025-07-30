@@ -10,6 +10,7 @@ return {
             ensure_installed = {
                 "stylua",
                 "shfmt",
+                "clangd",
                 "clang-format",
             },
         },
