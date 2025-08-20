@@ -2,24 +2,33 @@ return {
     "saghen/blink.cmp",
     opts = {
         keymap = {
-            --            preset = "enter",
+            preset = "enter",
+            ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
+            ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
+            ["<A-d>"] = {"snippet_forward"};
+            ["<A-s>"] = {"snippet_backward"};
             --        Super Tab
-            ["<C-h>"] = { "show", "show_documentation", "hide_documentation" },
---            ['<C-h>'] = { function(cmp) cmp.show({ providers = { 'snippets' } }) end },
+            --            ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+            ["<C-h>"] = {
+                function(cmp)
+                    cmp.show({ providers = { "snippets" } })
+                end,
+            },
             ["<C-e>"] = { "hide", "fallback" },
 
-            ["<Tab>"] = {
-                function(cmp)
-                    if cmp.snippet_active() then
-                        return cmp.accept()
-                    else
-                        return cmp.select_and_accept()
-                    end
-                end,
-                "snippet_forward",
-                "fallback",
-            },
-            ["<S-Tab>"] = { "snippet_backward", "fallback" },
+--                              ["<Tab>"] = {
+--                                  function(cmp)
+--                                      if cmp.snippet_active() then
+--                                          return cmp.accept()
+--                                      else
+--                                          return cmp.select_and_accept()
+--                                      end
+--                                  end,
+--                                  "snippet_forward",
+--                                  "fallback",
+--                              },
+--                              ["<S-Tab>"] = { "snippet_backward", "fallback" },
+
             ["<Up>"] = { "select_prev", "fallback" },
             ["<Down>"] = { "select_next", "fallback" },
             ["<C-p>"] = { "select_prev", "fallback_to_mappings" },
