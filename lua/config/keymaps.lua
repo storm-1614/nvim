@@ -8,19 +8,22 @@ local opt = { noremap = true, silent = true }
 
 --alt
 map("n", "<A-t>", ":tabedit<CR>", opt)
---map('n', '<A-d>', ':BufferLinePickClose<CR>', opt)
 map("n", "<C-q>", ":tabc<CR>", opt)
 map("n", "<A-w>", ":w<CR>", opt)
---map('n', '<A-f>', ':Translate<CR>', opt)
 map("n", "<A-x>", ":RunCode<CR>", opt)
 map("n", "<A-z>", "<C-w>w", opt)
-map("n", "<A-left>", "<C-w><left>", opt)
-map("n", "<A-right>", "<C-w><right>", opt)
-map("n", "<A-up>", "<C-w><up>", opt)
-map("n", "<A-down>", "<C-w><down>", opt)
-map("n", "<A-m>", ":Neotree<CR>", opt)
+map("n", "<A-h>", "<C-w><left>", opt)
+map("n", "<A-l>", "<C-w><right>", opt)
+map("n", "<A-k>", "<C-w><up>", opt)
+map("n", "<A-j>", "<C-w><down>", opt)
+map("n", "<A-q>", ":q<CR>", opt)
 
 -- Ctrl
-map("n", "<A-q>", ":q<CR>", opt)
+
+vim.keymap.set("n", "=", [[<cmd>vertical resize +2<cr>]]) -- make the window biger vertically
+vim.keymap.set("n", "-", [[<cmd>vertical resize -2<cr>]]) -- make the window smaller vertically
+vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]]) -- make the window bigger horizontally by pressing shift and =
+vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window smaller horizontally by pressing shift and -
+
 
 return pluginKeys
