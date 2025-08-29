@@ -16,7 +16,7 @@ map("n", "<A-h>", "<C-w><left>", opt)
 map("n", "<A-l>", "<C-w><right>", opt)
 map("n", "<A-k>", "<C-w><up>", opt)
 map("n", "<A-j>", "<C-w><down>", opt)
-map("n", "<A-q>", ":q<CR>", opt)
+map("n", "<A-e>", ":q<CR>", opt)
 
 -- Ctrl
 
