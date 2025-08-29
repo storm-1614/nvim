@@ -12,6 +12,8 @@ return {
                 "shfmt",
                 "clangd",
                 "clang-format",
+                "autotools-language-server",
+                "ltex-ls-plus",
             },
         },
         ---@param opts MasonSettings | {ensure_installed: string[]}

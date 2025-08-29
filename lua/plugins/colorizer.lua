@@ -11,9 +11,9 @@ return {
         user_default_options = {
             names = true, -- "Name" codes like Blue or red.  Added from `vim.api.nvim_get_color_map()`
             names_opts = { -- options for mutating/filtering names.
-                lowercase = true, -- name:lower(), highlight `blue` and `red`
-                camelcase = true, -- name, highlight `Blue` and `Red`
-                uppercase = false, -- name:upper(), highlight `BLUE` and `RED`
+                lowercase = false, -- name:lower(), highlight `blue` and `red`
+                camelcase = false, -- name, highlight `Blue` and `Red`
+                uppercase = true, -- name:upper(), highlight `BLUE` and `RED`
                 strip_digits = false, -- ignore names with digits,
                 -- highlight `blue` and `red`, but not `blue3` and `red4`
             },
@@ -28,7 +28,7 @@ return {
             AARRGGBB = false, -- 0xAARRGGBB hex codes
             rgb_fn = true, -- CSS rgb() and rgba() functions
             hsl_fn = false, -- CSS hsl() and hsla() functions
-            css = false, -- Enable all CSS *features*:
+            css = true, -- Enable all CSS *features*:
             -- names, RGB, RGBA, RRGGBB, RRGGBBAA, AARRGGBB, rgb_fn, hsl_fn
             css_fn = false, -- Enable all CSS *functions*: rgb_fn, hsl_fn
             -- Tailwind colors.  boolean|'normal'|'lsp'|'both'.  True sets to 'normal'

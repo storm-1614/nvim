@@ -5,8 +5,8 @@ return {
             preset = "enter",
             ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
             ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
-            ["<A-d>"] = {"snippet_forward"};
-            ["<A-s>"] = {"snippet_backward"};
+            ["<A-d>"] = { "snippet_forward" },
+            ["<A-s>"] = { "snippet_backward" },
             --        Super Tab
             --            ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
             ["<C-h>"] = {
@@ -16,18 +16,18 @@ return {
             },
             ["<C-e>"] = { "hide", "fallback" },
 
---                              ["<Tab>"] = {
---                                  function(cmp)
---                                      if cmp.snippet_active() then
---                                          return cmp.accept()
---                                      else
---                                          return cmp.select_and_accept()
---                                      end
---                                  end,
---                                  "snippet_forward",
---                                  "fallback",
---                              },
---                              ["<S-Tab>"] = { "snippet_backward", "fallback" },
+            --                              ["<Tab>"] = {
+            --                                  function(cmp)
+            --                                      if cmp.snippet_active() then
+            --                                          return cmp.accept()
+            --                                      else
+            --                                          return cmp.select_and_accept()
+            --                                      end
+            --                                  end,
+            --                                  "snippet_forward",
+            --                                  "fallback",
+            --                              },
+            --                              ["<S-Tab>"] = { "snippet_backward", "fallback" },
 
             ["<Up>"] = { "select_prev", "fallback" },
             ["<Down>"] = { "select_next", "fallback" },
@@ -44,6 +44,13 @@ return {
                 selection = {
                     preselect = false,
                     auto_insert = true,
+                },
+            },
+
+            documentation = {
+                window = {
+                    border = "rounded",
+                    winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
                 },
             },
         },
