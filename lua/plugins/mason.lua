@@ -14,8 +14,13 @@ return {
                 "clang-format",
                 "autotools-language-server",
                 "ltex-ls-plus",
+                "qmlls",
             },
         },
+        vim.lsp.enable("qmlls"),
+        vim.lsp.config("qmlls", {
+            cmd = { "qmlls6" },
+        }),
         ---@param opts MasonSettings | {ensure_installed: string[]}
         config = function(_, opts)
             require("mason").setup(opts)
