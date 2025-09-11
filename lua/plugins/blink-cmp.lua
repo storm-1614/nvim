@@ -3,10 +3,11 @@ return {
     opts = {
         keymap = {
             preset = "enter",
-            --            ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
-            --            ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
+            ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
+            ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
             ["<A-d>"] = { "snippet_forward" },
             ["<A-s>"] = { "snippet_backward" },
+            --        Super Tab
             ["<C-l>"] = { "show", "show_documentation", "hide_documentation" },
             ["<C-h>"] = {
                 function(cmp)
@@ -15,19 +16,18 @@ return {
             },
             ["<C-e>"] = { "hide", "fallback" },
 
-            -- Super Tab
-            ["<Tab>"] = {
-                function(cmp)
-                    if cmp.snippet_active() then
-                        return cmp.accept()
-                    else
-                        return cmp.select_and_accept()
-                    end
-                end,
-                "snippet_forward",
-                "fallback",
-            },
-            ["<S-Tab>"] = { "snippet_backward", "fallback" },
+            --                              ["<Tab>"] = {
+            --                                  function(cmp)
+            --                                      if cmp.snippet_active() then
+            --                                          return cmp.accept()
+            --                                      else
+            --                                          return cmp.select_and_accept()
+            --                                      end
+            --                                  end,
+            --                                  "snippet_forward",
+            --                                  "fallback",
+            --                              },
+            --                              ["<S-Tab>"] = { "snippet_backward", "fallback" },
 
             ["<Up>"] = { "select_prev", "fallback" },
             ["<Down>"] = { "select_next", "fallback" },
@@ -42,7 +42,7 @@ return {
         completion = {
             list = {
                 selection = {
-                    preselect = true,
+                    preselect = false,
                     auto_insert = true,
                 },
             },
