@@ -113,7 +113,7 @@ opt.wrap = false -- Disable line wrap
 
 if vim.fn.has("nvim-0.10") == 1 then
     opt.smoothscroll = true
-    opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
+    opt.foldexpr = "v:lua.require'lazyvim.util'.treesitter.foldexpr()"
     opt.foldmethod = "expr"
     opt.foldtext = ""
 else
@@ -126,3 +126,6 @@ vim.g.markdown_recommended_style = 0
 
 
 vim.g.mkdp_theme = 'light'
+
+-- Set to "basedpyright" to use basedpyright instead of pyright.
+vim.g.lazyvim_python_lsp = "pyright"
