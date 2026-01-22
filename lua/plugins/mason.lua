@@ -17,6 +17,8 @@ return {
                 "ruff",
                 "qmlls",
                 "marksman",
+                "asm-lsp",
+                "asmfmt",
             },
         },
         vim.lsp.enable("qmlls"),
