@@ -8,14 +8,11 @@ return {
                 },
             },
             servers = {
-                ruff = {
-                    init_options = {
-                        settings = {
-                            lint = {
-                                enable = false,
-                            },
-                        },
-                    },
+                clangd = {
+                    mason = false
+                },
+                lua_ls = {
+                    mason = false
                 },
             },
         },

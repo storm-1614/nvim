@@ -21,14 +21,6 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "lazyvim.plugins.extras.editor.neo-tree"},
     { import = "lazyvim.plugins.extras.editor.fzf"},
-    { import = "lazyvim.plugins.extras.dap.core"},
-    { import = "lazyvim.plugins.extras.lang.clangd"},
-    { import = "lazyvim.plugins.extras.lang.cmake"},
-    { import = "lazyvim.plugins.extras.lang.python"},
-    { import = "lazyvim.plugins.extras.lang.json"},
-    { import = "lazyvim.plugins.extras.lang.toml"},
-    { import = "lazyvim.plugins.extras.ai.copilot-chat"},
-    { import = "lazyvim.plugins.extras.ai.copilot"},
     { import = "plugins" },
   },
   defaults = {

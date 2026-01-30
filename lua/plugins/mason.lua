@@ -8,15 +8,7 @@ return {
         opts_extend = { "ensure_installed" },
         opts = {
             ensure_installed = {
-                "stylua",
                 "shfmt",
-                "clangd",
-                "clang-format",
-                "autotools-language-server",
---                "ltex-ls-plus",
-                "ruff",
-                "qmlls",
-                "marksman",
                 "asm-lsp",
                 "asmfmt",
             },
