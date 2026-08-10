@@ -1,3 +1,9 @@
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "tex", "text",  },
+  callback = function()
+    vim.opt_local.wrap = true       -- 开启自动折行
+  end,
+})
 return {
   {
     "lervag/vimtex",
@@ -21,12 +27,12 @@ return {
           "-synctex=1",
           "-file-line-error",
           "-shell-escape", -- 允许运行外部命令 (如 minted 宏包需要)
-          "-halt-on-error",
+--          "-halt-on-error",
           "-interaction=nonstopmode",
           "-silent",
         },
       }
     end
-  }
+  },
 }
 
