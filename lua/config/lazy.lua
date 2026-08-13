@@ -28,6 +28,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.toml" },
         { import = "lazyvim.plugins.extras.lang.tex" },
+        { import = "lazyvim.plugins.extras.lang.php" },
         { import = "plugins" },
     },
     defaults = {

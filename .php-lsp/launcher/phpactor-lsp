@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# phpactor LSP launcher
+# 给 phpactor 注入 iconv 支持:系统 php.ini 中 iconv 默认被注释,
+# 这里通过 PHP_INI_SCAN_DIR 追加本目录 conf.d 里的 zz-iconv.ini,
+# 仅对 phpactor 的 PHP 进程生效,不影响系统其它 PHP 程序。
+#
+# 说明:本脚本依赖 mason 安装的 phpactor bin。若将来 phpactor 的
+# 安装位置改变,只需更新下面这一行的路径即可。此 launcher 位于
+# nvim 配置内,不随 mason 更新而丢失。
+LAUNCH_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+ROOT_DIR="${LAUNCH_DIR%/launcher}"
+export PHP_INI_SCAN_DIR="/etc/php/conf.d:$ROOT_DIR/conf.d"
+exec /home/storm/.local/share/nvim/mason/bin/phpactor "$@"
