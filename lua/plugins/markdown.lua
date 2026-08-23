@@ -58,6 +58,16 @@ return {
             checkbox = {
                 enabled = false,
             },
+            anti_conceal = {
+                enabled = true,
+                -- 光标所在行不显示虚拟文本
+                ignore = {
+                    code_background = true,
+                    indent = true,
+                    sign = true,
+                    virtual_lines = true,
+                },
+            },
         },
         ft = { "markdown", "norg", "rmd", "org", "codecompanion" },
         config = function(_, opts)

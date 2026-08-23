@@ -9,14 +9,6 @@ return {
             },
             servers = {
                 ruff = {
-                    -- 保持 ruff 作为 LSP formatter。但它不提供符号文档。
-                    -- 关掉 noice 接管后,K 走原生 vim.lsp.buf.hover,会尊重
-                    -- 这里的 handler:丢弃 ruff 的响应,避免空文档浮窗。
-                    handlers = {
-                        ["textDocument/hover"] = function(_, _, _)
-                            return nil
-                        end,
-                    },
                     init_options = {
                         settings = {
                             lint = {
@@ -67,13 +59,15 @@ return {
     {
         "folke/noice.nvim",
         opts = {
-            -- 关掉 noice 对 hover 的接管,让 K 回到原生 vim.lsp.buf.hover。
-            -- 否则 noice 会自己向每个 client 发 hover,绕过 ruff 的能力屏蔽,
-            -- 导致 ruff 返回空文档时弹 "No information available" 空窗。
-            -- 原生 hover 会尊重下面 servers.ruff 的 handlers 屏蔽。
+            -- 阻断 ruff 空 hover 通知:
+            -- noice 默认接管 hover(vim.lsp.buf.hover = noice.lsp.hover),
+            -- 它自己向每个 client 发请求,ruff 返回空结果时在
+            -- noice/lua/noice/lsp/hover.lua 弹 vim.notify("No information
+            -- available")。silent=true 让空结果静默,只保留有内容的
+            -- basedpyright 浮窗。
             lsp = {
                 hover = {
-                    enabled = false,
+                    silent = true,
                 },
             },
             presets = {
